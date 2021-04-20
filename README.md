@@ -8,12 +8,16 @@ Beware that this is not the official iCaRL code. The original Theano-Lasagne cod
 
 Beware that this code won't work with the iILSVRC dataset as it uses a modified version version of the **ResNet** which is specific to CIFAR-100.
 
+This implementation has been tested with Python 3.8.6 and PyTorch 1.7.1 (see the [conda environment](environment.yml) for more details).
+
 
 ## About this implementation
 
 The code was manually translated from the original Theano-Lasagne one. This includes the **modified ResNet** and the custom **weight initialization** procedure. The code was translated by analyzing the original code and the Lasagne documentation in order to correctly port the correct default values for optimizers, layers, weight initialization procedures, etc. Beware that discrepancies with the original code may still exist.
 
 This implementation is far from being efficient. **A more efficient, general and tested version is coming to the [Avalanche](https://github.com/ContinualAI/avalanche) Continual Learning library very soon!**
+
+The reference conda environment can be found in [`environment.yml`](environment.yml)
 
 
 ## Reading the code
